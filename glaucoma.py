@@ -100,8 +100,8 @@ df_dummies
 from imblearn.over_sampling import SMOTE
 
 from sklearn.preprocessing import MinMaxScaler
-  scaler= MinMaxScaler()
-  df[['Age', 'Intraocular Pressure (IOP)', 'Cup-to-Disc Ratio (CDR)', 'Pachymetry']] = scaler.fit_transform(df[['Age', 'Intraocular Pressure (IOP)', 'Cup-to-Disc Ratio (CDR)', 'Pachymetry']])
+scaler= MinMaxScaler()
+df[['Age', 'Intraocular Pressure (IOP)', 'Cup-to-Disc Ratio (CDR)', 'Pachymetry']] = scaler.fit_transform(df[['Age', 'Intraocular Pressure (IOP)', 'Cup-to-Disc Ratio (CDR)', 'Pachymetry']])
 
 df['Glaucoma Type'].value_counts()
 
